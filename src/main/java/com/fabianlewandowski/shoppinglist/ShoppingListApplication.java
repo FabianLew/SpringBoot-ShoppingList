@@ -12,9 +12,5 @@ public class ShoppingListApplication {
         SpringApplication.run(ShoppingListApplication.class, args);
     }
 
-    private void addItem(ShoppingItemRepository repository){
-        repository.save(new ShoppingItem("item", 1));
-    }
-
 
 }
