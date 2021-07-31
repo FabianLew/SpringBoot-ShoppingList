@@ -1,0 +1,36 @@
+h1{
+    font-size : 16px;
+    text-align : center;
+    color : #006600
+}
+
+#mainTable{
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+th,tr,td{
+    text-align : center;
+    overflow: auto;
+}
+
+
+input[type=text], input[type=number]{
+    width: 80%;
+    padding: 6px 10px;
+    margin: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#container{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 30%;
+    border: 1px solid black;
+    border-radius: 2%;
+    margin: 10px;
+}
+
