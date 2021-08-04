@@ -37,6 +37,11 @@ public class ShoppingItemController {
         return service.findShoppingItemById(id);
     }
 
+    @GetMapping("/noListObjects")
+    public List<ShoppingItem> findShoppingItemsWithNoList(){
+        return service.findShoppingItemsWithNoList();
+    }
+
     @PostMapping
     public ShoppingItem saveNewItem(@RequestBody ShoppingItem item){
         return service.save(item);

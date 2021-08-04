@@ -5,13 +5,10 @@ import com.fabianlewandowski.shoppinglist.model.ShoppingList;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import java.util.List;
-
 @Repository
-public interface ShoppingItemRepository extends JpaRepository<ShoppingItem,Long> {
+public interface ShoppingListRepository extends JpaRepository<ShoppingList, Long> {
 
-    ShoppingItem findShoppingItemById(Long id);
-    void deleteShoppingItemById(Long id);
-    List<ShoppingItem> findAllByList(ShoppingList list);
-
+    ShoppingList findShoppingListByItems(ShoppingItem item);
+    ShoppingList findShoppingListById(Long id);
+    void deleteShoppingListById(Long id);
 }

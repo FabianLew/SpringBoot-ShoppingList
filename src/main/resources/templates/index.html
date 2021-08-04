@@ -10,13 +10,24 @@
 </head>
 
 <body>
-  <h1>List View Example</h1>
+  <h1 id = "title">New Shopping List</h1>
+
 	<table id = 'mainTable'>
 	<tr>
 		<th> Data number </th>
 		<th> Value </th>
+		<th></th>
+		<th></th>
+		<th><button type="submit" id="saveBtn">SAVE LIST</button></th>
 	</tr>
 	</table>
+
+  <div id="listsContainer">
+	  <div class="listDiv" id="firstListDiv">
+		  <h1>New List</h1>
+	  </div>
+  </div>
+
 
 	<div id="container">
 		<label for="name"><b>Name of product</b></label>
@@ -27,6 +38,7 @@
 
 		<button type="submit" id="submitBtn">Save</button>
 	</div>
+
 
 
 </body>
